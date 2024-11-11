@@ -1,0 +1,24 @@
+Nome:Rafael Szeuczuk André      Turma:B
+
+2.  Ao mudar a condição, o loop executara a repetição uma vez a mais sendo à desnecessaria;
+
+3.  Pode mudar durante a execução do código;
+
+4.  Para v3: 0 trocas;
+    Para v4: 2 trocas;
+
+5.  void selection(int *v, int n)
+{
+    int i, j, maior;
+    for (i = 0; i < n - 1; i++)
+    {
+        maior = i;
+        for (j = i + 1; j < n; j++)
+        {
+            if (v[j] > v[maior])
+                maior = j;
+        }
+        if (v[maior] != v[i])
+            troca(&v[maior], &v[i]);
+    }
+}

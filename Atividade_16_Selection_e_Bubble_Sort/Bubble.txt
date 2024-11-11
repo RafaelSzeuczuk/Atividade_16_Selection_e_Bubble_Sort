@@ -1,0 +1,19 @@
+Nome:Rafael Szeuczuk André      Turma:B
+
+2.  Comparações: 10; 
+    Trocas: 6;
+
+3.  As comparações vão ser as mesmas: n(n-1)/2;
+    Ja a ordenação depende de vários fatores;
+
+4.  void bubbleRecursive(int *v, int n)
+{
+    if (n == 1)
+        return;
+    for (int i = 0; i < n - 1; i++)
+    {
+        if (v[i] > v[i + 1])
+            std::swap(v[i], v[i + 1]);
+    }
+    bubbleRecursive(v, n - 1);
+}
